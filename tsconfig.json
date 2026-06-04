@@ -13,4 +13,5 @@
   },
   "include": ["src/**/*.js"],
   "exclude": ["node_modules", "dist", "tmp_uploads"]
+  "exclude": ["node_modules", "dist", "tmp_uploads"]
 }
