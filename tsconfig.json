@@ -16,6 +16,5 @@
     "ignoreDeprecations": "6.0"
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist", "tmp_uploads"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["node_modules", "dist", "tmp_uploads"]
 }
