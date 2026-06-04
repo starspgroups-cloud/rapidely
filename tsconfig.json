@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowJs": true,
-    "checkJs": false,
+    "allowSyntheticDefaultImports": true,
     "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "noEmit": true,
+    "jsx": "react-jsx",
     "ignoreDeprecations": "6.0"
   },
-  "include": ["src/**/*.js"],
-  "exclude": ["node_modules", "dist", "tmp_uploads"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "tmp_uploads"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
