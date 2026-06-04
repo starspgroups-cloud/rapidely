@@ -1,0 +1,19 @@
+
+name = "rapidely-worker"
+main = "src/index.ts"
+compatibility_date = "2026-05-23"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "rapidely-db"
+database_id = "YOUR_D1_DATABASE_ID"
+
+[[kv_namespaces]]
+binding = "STORE_KV"
+id = "YOUR_KV_NAMESPACE_ID"
+
+[vars]
+APP_NAME = "RapiDely"
+
+[observability.logs]
+enabled = true

@@ -1,0 +1,5 @@
+import { AlertTriangle, MessageCircle, RotateCcw } from 'lucide-react';
+import RoleSwitch from '../../components/RoleSwitch';
+
+const disputes = [{ ref: 'RDY10291', issue: 'Item missing', priority: 'High' }, { ref: 'RDY10288', issue: 'Late delivery', priority: 'Medium' }];
+export default function Disputes() { return <main className="px-4 pb-24"><RoleSwitch/><h1 className="mt-2 text-3xl font-black">Disputes</h1><p className="text-sm font-semibold text-slate-400">Refunds, complaints and trust safety.</p><section className="mt-4 space-y-3">{disputes.map(d=><article key={d.ref} className="glass rounded-[1.6rem] p-4"><AlertTriangle className="text-amber-300"/><h3 className="mt-2 font-black">#{d.ref}</h3><p className="text-sm font-bold text-slate-300">{d.issue} • {d.priority}</p><div className="mt-3 flex gap-2"><button className="tap flex-1 rounded-2xl bg-white/10 py-3 font-black"><MessageCircle className="inline" size={16}/> Chat</button><button className="tap flex-1 rounded-2xl bg-success py-3 font-black text-ink"><RotateCcw className="inline" size={16}/> Refund</button></div></article>)}</section></main> }
